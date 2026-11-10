@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloom Room Yoga — 6-Week Spring Renewal Program</title>
+  <meta name="description" content="Awaken from winter with Bloom Room's 6-Week Spring Renewal Program. Somatic flow, restorative yin, breathwork, and sound immersion at our light-filled sanctuary.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-inner container">
+      <div class="announcement-text">
+        <span class="badge-leaf">🌱 Cohort Enrollment</span>
+        <span>Spring Renewal begins April 6 • <strong>Only 6 of 24 mats remain</strong></span>
+      </div>
+      <div class="countdown-wrap">
+        <span class="countdown-label">Early-Bird Ends In:</span>
+        <div class="countdown-timer" id="countdownTimer">
+          <span class="timer-unit"><strong id="days">04</strong>d</span>
+          <span class="timer-sep">:</span>
+          <span class="timer-unit"><strong id="hours">12</strong>h</span>
+          <span class="timer-sep">:</span>
+          <span class="timer-unit"><strong id="minutes">48</strong>m</span>
+          <span class="timer-sep">:</span>
+          <span class="timer-unit"><strong id="seconds">30</strong>s</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner container">
+      <a href="#" class="brand-logo" aria-label="Bloom Room Yoga Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 3C16 3 10 9 10 15C10 18.3137 12.6863 21 16 21C19.3137 21 22 18.3137 22 15C22 9 16 3 16 3Z" fill="#C87D55" fill-opacity="0.85"/>
+          <path d="M7 11C7 11 3 17 6 21C8.2 24 12 23 14 20C12 18 10 14 7 11Z" fill="#8E9B82" fill-opacity="0.85"/>
+          <path d="M25 11C25 11 29 17 26 21C23.8 24 20 23 18 20C20 18 22 14 25 11Z" fill="#8E9B82" fill-opacity="0.85"/>
+          <path d="M16 21V29M16 29C14 27.5 12 27 10 27M16 29C18 27.5 20 27 22 27" stroke="#4A6054" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">BLOOM ROOM</span>
+          <span class="brand-subtitle">YOGA & SANCTUARY</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#curriculum" class="nav-link">The 6 Weeks</a>
+        <a href="#sanctuary" class="nav-link">Sanctuary</a>
+        <a href="#quiz" class="nav-link">Renewal Quiz</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#teachers" class="nav-link">Guides</a>
+        <a href="#investment" class="nav-link">Investment</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-outline btn-sm" id="btnOpenQuiz">Discover Your Flow</button>
+        <button type="button" class="btn btn-primary btn-sm" id="btnNavReserve">Reserve Your Mat</button>
+        <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav">
+        <a href="#curriculum" class="mobile-link">The 6 Weeks</a>
+        <a href="#sanctuary" class="mobile-link">Sanctuary Experience</a>
+        <a href="#quiz" class="mobile-link">Renewal Self-Quiz</a>
+        <a href="#schedule" class="mobile-link">Weekly Schedule</a>
+        <a href="#teachers" class="mobile-link">Your Guides</a>
+        <a href="#investment" class="mobile-link">Tuition & Tiers</a>
+        <a href="#faq" class="mobile-link">Questions & Answers</a>
+        <button type="button" class="btn btn-primary btn-block mt-4" id="btnMobileReserve">Reserve Your Mat</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-dot"></span>
+            <span>6-Week Immersive Cohort • April 6 – May 17, 2026</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Awaken from winter.<br>
+            <em class="serif-italic">Step into full bloom.</em>
+          </h1>
+
+          <p class="hero-lead">
+            After months of winter stillness, give your body and spirit permission to unfurl. 
+            Join an intimate cohort for 6 weeks of somatic vinyasa flow, deep restorative yin, 
+            alchemy crystal sound baths, and botanical morning rituals at Bloom Room Sanctuary.
+          </p>
+
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary btn-lg" id="btnHeroReserve">
+              <span>Reserve Your Mat</span>
+              <svg class="btn-arrow" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <a href="#curriculum" class="btn btn-ghost btn-lg">
+              <span>Explore Curriculum</span>
+              <svg class="btn-arrow-down" viewBox="0 0 20 20" fill="none"><path d="M10 4V16M10 16L5 11M10 16L15 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <!-- Trust Proof -->
+          <div class="hero-trust">
+            <div class="rating-stars" aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+            <span class="trust-text"><strong>4.98 / 5</strong> from 340+ past renewal students</span>
+            <span class="trust-divider">•</span>
+            <span class="trust-text">Capped at 24 mats</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-frame-hero">
+            <img src="assets/hero.jpg" alt="Bloom Room sunlit yoga sanctuary with natural oak beams and plants" class="hero-main-img" id="heroImg">
+            <div class="glass-tag glass-tag-top">
+              <span class="tag-icon">🌿</span>
+              <div>
+                <strong>Light-Filled Sanctuary</strong>
+                <p>Natural oak, live botanicals & heated cork floors</p>
+              </div>
+            </div>
+            <div class="glass-tag glass-tag-bottom">
+              <span class="tag-icon">✨</span>
+              <div>
+                <strong>Curated Cohort Experience</strong>
+                <p>In-Studio • 4K Livestream • On-Demand Library</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Benefits / Why Spring Renewal -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-label">The Seasonal Shift</span>
+          <h2 class="section-title">Why Spring Demands a Reset</h2>
+          <p class="section-desc">Nature never blooms year-round without pausing. Spring is the biological window when our lymphatic system, fascia, and neural pathways naturally crave release and expansion.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C87D55" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Fascial & Joint Unwinding</h3>
+            <p>Target deep winter constriction through somatic micro-movements, myofascial release, and progressive lengthening tailored for spine, hips, and shoulders.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4A6054" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Vagus Nerve Recalibration</h3>
+            <p>Transition out of high-cortisol sympathetic overdrive into tranquil parasympathetic balance with pranayama breath patterns and 432Hz frosted crystal bowls.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#8E9B82" stroke-width="2"><path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"/><path d="M12 6a6 6 0 0 1 6 6c0 3.3-2.7 6-6 6s-6-2.7-6-6a6 6 0 0 1 6-6z"/></svg>
+            </div>
+            <h3>Botanical & Ritual Support</h3>
+            <p>Every session concludes in our herbal lounge with cold-pressed botanical infusions, seasonal adaptogen elixirs, and weekly guided reflection prompts.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C87D55" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Intimate 24-Mat Cohort</h3>
+            <p>No crowded rooms or anonymous practice. Enjoy hands-on alignment assists, personalized modifications, and genuine connection with dedicated fellow yogis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive 6-Week Curriculum Tabs -->
+    <section class="curriculum-section" id="curriculum">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-label">Weekly Arc of Transformation</span>
+          <h2 class="section-title">The 6-Week Progressive Curriculum</h2>
+          <p class="section-desc">Each week is intentionally sequenced around an elemental energy shift—from grounding earth roots to radiant full bloom.</p>
+        </div>
+
+        <!-- Week Nav Selector -->
+        <div class="week-tabs-container">
+          <div class="week-tabs" role="tablist" id="weekTabs">
+            <button class="week-tab active" data-week="1" role="tab" aria-selected="true">
+              <span class="tab-num">Week 1</span>
+              <span class="tab-name">Awaken & Ground</span>
+            </button>
+            <button class="week-tab" data-week="2" role="tab" aria-selected="false">
+              <span class="tab-num">Week 2</span>
+              <span class="tab-name">Fluid Detox</span>
+            </button>
+            <button class="week-tab" data-week="3" role="tab" aria-selected="false">
+              <span class="tab-num">Week 3</span>
+              <span class="tab-name">Ignite Vitality</span>
+            </button>
+            <button class="week-tab" data-week="4" role="tab" aria-selected="false">
+              <span class="tab-num">Week 4</span>
+              <span class="tab-name">Heart Opening</span>
+            </button>
+            <button class="week-tab" data-week="5" role="tab" aria-selected="false">
+              <span class="tab-num">Week 5</span>
+              <span class="tab-name">Sound & Release</span>
+            </button>
+            <button class="week-tab" data-week="6" role="tab" aria-selected="false">
+              <span class="tab-num">Week 6</span>
+              <span class="tab-name">Full Bloom</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Week Detail Card (Dynamic via JS) -->
+        <div class="curriculum-card-wrapper">
+          <div class="curriculum-card" id="curriculumCard">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Self-Quiz Section -->
+    <section class="quiz-section" id="quiz">
+      <div class="container">
+        <div class="quiz-wrapper">
+          <div class="quiz-header text-center">
+            <span class="sub-label">Interactive Assessment</span>
+            <h2 class="section-title">Discover Your Spring Renewal Path</h2>
+            <p class="section-desc">Answer 3 gentle questions to find out which practice rhythms, somatic focus, and cohort track will nourish you best this season.</p>
+          </div>
+
+          <div class="quiz-box" id="quizBox">
+            <!-- Question 1 -->
+            <div class="quiz-step active" id="quizStep1">
+              <div class="step-counter">Question 1 of 3</div>
+              <h3 class="quiz-question">How does your body and mental space feel right now?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-ans="stiff">
+                  <div class="option-title">Sluggish & Stiff</div>
+                  <div class="option-desc">Winter hibernation feeling, tight lower back or hips, craving fluid physical mobility.</div>
+                </button>
+                <button type="button" class="quiz-option" data-ans="stressed">
+                  <div class="option-title">Wired & Mentally Overwhelmed</div>
+                  <div class="option-desc">High cognitive fatigue, shallow breathing, restless sleep, craving deep restorative silence.</div>
+                </button>
+                <button type="button" class="quiz-option" data-ans="stagnant">
+                  <div class="option-title">Stagnant & Seeking Purpose</div>
+                  <div class="option-desc">Ready to build vibrant physical stamina, lean strength, and inspiring creative momentum.</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quiz-step" id="quizStep2">
+              <div class="step-counter">Question 2 of 3</div>
+              <h3 class="quiz-question">What is your current relationship with yoga?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-ans="beginner">
+                  <div class="option-title">Curious Beginner / Returning</div>
+                  <div class="option-desc">I want compassionate instruction, clear alignment basics, and no intimidating jargon.</div>
+                </button>
+                <button type="button" class="quiz-option" data-ans="regular">
+                  <div class="option-title">Consistent Practitioner</div>
+                  <div class="option-desc">I practice 1–3 times a week and want to deepen my breathwork, somatic subtlety, and philosophy.</div>
+                </button>
+                <button type="button" class="quiz-option" data-ans="advanced">
+                  <div class="option-title">Dedicated Yogi / Teacher</div>
+                  <div class="option-desc">Looking for a profound, structured seasonal immersion that challenges and resets my whole being.</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="quiz-step" id="quizStep3">
+              <div class="step-counter">Question 3 of 3</div>
+              <h3 class="quiz-question">Which time window best supports your natural biological rhythm?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-ans="morning">
+                  <div class="option-title">Morning Dawn Radiance (7:00 AM)</div>
+                  <div class="option-desc">Awaken before the workday with energizing solar flow and focused intention.</div>
+                </button>
+                <button type="button" class="quiz-option" data-ans="evening">
+                  <div class="option-title">Twilight Unwind & Sound (6:30 PM)</div>
+                  <div class="option-desc">Decompress after work with soothing yin, restorative postures, and sound baths.</div>
+                </button>
+                <button type="button" class="quiz-option" data-ans="hybrid">
+                  <div class="option-title">Flexible Hybrid & Replay</div>
+                  <div class="option-desc">I need weekend workshops + high-definition on-demand classes to fit a shifting calendar.</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quiz Result View -->
+            <div class="quiz-result" id="quizResult" style="display: none;">
+              <div class="result-badge">✨ Your Custom Renewal Profile</div>
+              <h3 class="result-title" id="resultTitle">The Vitality & Somatic Reset Track</h3>
+              <p class="result-summary" id="resultSummary">Based on your current state, your body is craving nervous system decompression paired with spiraling fascial mobility.</p>
+              
+              <div class="result-recommendations">
+                <div class="rec-item">
+                  <span class="rec-icon">🧘‍♀️</span>
+                  <div>
+                    <strong>Recommended Rhythm:</strong>
+                    <span id="recRhythm">2 Morning Solar Flows + 1 Twilight Yin & Sound Bath weekly</span>
+                  </div>
+                </div>
+                <div class="rec-item">
+                  <span class="rec-icon">🌿</span>
+                  <div>
+                    <strong>Core Botanical Synergy:</strong>
+                    <span id="recHerb">Organic nettle, lemon verbena & holy basil restorative tea</span>
+                  </div>
+                </div>
+                <div class="rec-item">
+                  <span class="rec-icon">🏷️</span>
+                  <div>
+                    <strong>Suggested Program Tier:</strong>
+                    <span id="recTier">The Full Immersion Tier (Includes Welcome Box & Sound Immersions)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="result-actions">
+                <button type="button" class="btn btn-primary btn-lg" id="btnApplyQuizPlan">Apply This Plan to Enrollment</button>
+                <button type="button" class="btn btn-ghost" id="btnRestartQuiz">Retake Quiz</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sanctuary Experience Showcase -->
+    <section class="sanctuary-section" id="sanctuary">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-label">The Physical Sanctuary</span>
+          <h2 class="section-title">Designed for Stillness & Sensation</h2>
+          <p class="section-desc">Bloom Room was architected as a calm antidote to frantic urban pace—combining natural materials, gentle light, and sensory serenity.</p>
+        </div>
+
+        <div class="sanctuary-showcase-grid">
+          <div class="sanctuary-feature-card sanctuary-card-lg">
+            <img src="assets/instructor.jpg" alt="Yoga guide leading graceful crescent stretch in natural sunlight" class="feature-img">
+            <div class="feature-overlay">
+              <span class="feature-pill">Somatic Instruction</span>
+              <h3>Intelligent Alignment & Breath</h3>
+              <p>Every practice is guided with hands-on adjustments (optional), thoughtful anatomical cueing, and room to honor your personal body geometry.</p>
+            </div>
+          </div>
+
+          <div class="sanctuary-feature-card sanctuary-card-sm">
+            <img src="assets/ritual.jpg" alt="Ceremonial spring tea, crystal singing bowl, and gratitude journal on limestone" class="feature-img">
+            <div class="feature-overlay">
+              <span class="feature-pill">Sensory Ritual</span>
+              <h3>Botanical Tea & Sound Medicine</h3>
+              <p>Warm herbal infusions, singing bowl vibrations, and organic linen bolsters soothe your nervous system.</p>
+            </div>
+          </div>
+
+          <div class="amenities-card">
+            <h3>Sanctuary Amenities</h3>
+            <ul class="amenities-list">
+              <li>
+                <div class="amenity-check">✓</div>
+                <div>
+                  <strong>Radiant Heated Oak Flooring</strong>
+                  <p>Gentle sub-floor warmth keeps joints supple without dry, stifling hot yoga air.</p>
+                </div>
+              </li>
+              <li>
+                <div class="amenity-check">✓</div>
+                <div>
+                  <strong>Pure HEPA & Botanical Air Filtration</strong>
+                  <p>80+ living plants plus hospital-grade air turnover every 10 minutes.</p>
+                </div>
+              </li>
+              <li>
+                <div class="amenity-check">✓</div>
+                <div>
+                  <strong>Complimentary Prop Sanctuary</strong>
+                  <p>Premium cork mats, organic cotton straps, buckwheat bolsters, and sandbags provided.</p>
+                </div>
+              </li>
+              <li>
+                <div class="amenity-check">✓</div>
+                <div>
+                  <strong>Private Rain Showers & Changing Suites</strong>
+                  <p>Aesop botanical body care, fluffy Turkish cotton towels, and chilled lavender spritz.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule & Flexible Tracks -->
+    <section class="schedule-section" id="schedule">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-label">Weekly Rhythm</span>
+          <h2 class="section-title">A Schedule Built for Real Life</h2>
+          <p class="section-desc">We know spring schedules can be unpredictable. Mix and match across in-studio times or catch up anytime through our private 4K video archive.</p>
+        </div>
+
+        <!-- Schedule Filter Controls -->
+        <div class="schedule-filter-bar">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Times</button>
+            <button class="filter-btn" data-filter="morning">Morning Glow (7:00 AM)</button>
+            <button class="filter-btn" data-filter="midday">Midday Reset (12:00 PM)</button>
+            <button class="filter-btn" data-filter="evening">Twilight Yin (6:30 PM)</button>
+            <button class="filter-btn" data-filter="weekend">Weekend Immersion</button>
+          </div>
+        </div>
+
+        <!-- Schedule Table / Cards -->
+        <div class="schedule-grid" id="scheduleGrid">
+          <div class="schedule-card" data-time="morning">
+            <div class="schedule-badge morning">Morning Solar</div>
+            <div class="schedule-time">Mon & Wed • 7:00 AM – 8:15 AM</div>
+            <h3 class="schedule-title">Prana Awakening Vinyasa</h3>
+            <p class="schedule-guide">Guided by Elena Rostova • Room A</p>
+            <p class="schedule-desc">Dynamic breath-synchronized flows to activate core warmth, stimulate circulation, and clear mental fog before your day begins.</p>
+            <div class="schedule-tags">
+              <span>Dynamic</span>
+              <span>Energizing</span>
+              <span>In-Studio + Stream</span>
+            </div>
+          </div>
+
+          <div class="schedule-card" data-time="midday">
+            <div class="schedule-badge midday">Midday Pause</div>
+            <div class="schedule-time">Tuesday & Thursday • 12:00 PM – 1:00 PM</div>
+            <h3 class="schedule-title">Fascial Decompression & Mobility</h3>
+            <p class="schedule-guide">Guided by Julian Vance • Room B</p>
+            <p class="schedule-desc">Unwind screen posture, desk-bound hip flexors, and neck strain with slow somatic floorwork and gentle functional mobility.</p>
+            <div class="schedule-tags">
+              <span>Mobility</span>
+              <span>All Levels</span>
+              <span>Gentle</span>
+            </div>
+          </div>
+
+          <div class="schedule-card" data-time="evening">
+            <div class="schedule-badge evening">Twilight Rest</div>
+            <div class="schedule-time">Mon & Thu • 6:30 PM – 7:45 PM</div>
+            <h3 class="schedule-title">Restorative Yin & Sound Alchemy</h3>
+            <p class="schedule-guide">Guided by Maya Thorne • Sanctuary Main</p>
+            <p class="schedule-desc">Candlelit long-held passive floor poses with props, combined with 432Hz frosted crystal singing bowls to induce deep sleep.</p>
+            <div class="schedule-tags">
+              <span>Yin</span>
+              <span>Sound Bath</span>
+              <span>Nervous System</span>
+            </div>
+          </div>
+
+          <div class="schedule-card" data-time="weekend">
+            <div class="schedule-badge weekend">Saturday Immersion</div>
+            <div class="schedule-time">Saturdays • 10:00 AM – 11:45 AM</div>
+            <h3 class="schedule-title">Cohort Masterclass & Tea Circle</h3>
+            <p class="schedule-guide">Co-Guided by Full Teaching Faculty</p>
+            <p class="schedule-desc">Deep-dive weekly theme practice, breathwork intensive, guided journaling circle, and ceremonial organic tea tasting.</p>
+            <div class="schedule-tags">
+              <span>Masterclass</span>
+              <span>Community</span>
+              <span>Tea Ritual</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-footnote text-center">
+          <p>✨ <em>Can't make a session in person? Every class is automatically uploaded within 90 minutes to your private member portal with 60-day access.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculty / Guides Section -->
+    <section class="teachers-section" id="teachers">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-label">Guiding Hands</span>
+          <h2 class="section-title">Meet Your Spring Renewal Faculty</h2>
+          <p class="section-desc">Over four decades of combined somatic, clinical yoga therapy, and sound alchemy expertise to support your personal journey.</p>
+        </div>
+
+        <div class="teachers-grid">
+          <div class="teacher-card">
+            <div class="teacher-avatar-wrap">
+              <div class="teacher-initials" style="background: #E8ECE6; color: #4A6054;">ER</div>
+            </div>
+            <h3>Elena Rostova</h3>
+            <span class="teacher-role">Studio Founder & Lead Somatics (E-RYT 500)</span>
+            <p class="teacher-bio">With 16 years of teaching across Rishikesh, Tokyo, and Northern California, Elena blends traditional Ashtanga foundations with neuro-somatic release to cultivate effortless strength and profound calm.</p>
+            <blockquote class="teacher-quote">"Spring isn't about forcing growth. It is about creating the fertile soil and stillness from which you cannot help but expand."</blockquote>
+          </div>
+
+          <div class="teacher-card">
+            <div class="teacher-avatar-wrap">
+              <div class="teacher-initials" style="background: #F7EBE8; color: #C87D55;">MT</div>
+            </div>
+            <h3>Maya Thorne</h3>
+            <span class="teacher-role">Sound Alchemist & Breath Therapist</span>
+            <p class="teacher-bio">Certified in clinical psychoacoustics and Himalayan singing bowl traditions, Maya creates immersive harmonic soundscapes that quiet beta brainwaves and guide the body into restorative theta regeneration.</p>
+            <blockquote class="teacher-quote">"When the mind is washed in pure resonance, the nervous system finally drops its armor."</blockquote>
+          </div>
+
+          <div class="teacher-card">
+            <div class="teacher-avatar-wrap">
+              <div class="teacher-initials" style="background: #EDE8DE; color: #7B6843;">JV</div>
+            </div>
+            <h3>Julian Vance</h3>
+            <span class="teacher-role">Fascial Mobility & Anatomy Specialist</span>
+            <p class="teacher-bio">A former contemporary dancer and certified functional movement therapist, Julian specializes in unlocking dormant joint ranges, decompression techniques, and rebuilding functional spinal fluidity.</p>
+            <blockquote class="teacher-quote">"Move with curiosity instead of criticism. Your body already knows how to heal when given the right cues."</blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof / Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-label">Echoes of Renewal</span>
+          <h2 class="section-title">Transformations From Past Cohorts</h2>
+          <p class="section-desc">Read how the 6-week seasonal journey impacted the everyday lives, bodies, and minds of our community.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"I came into the Spring program carrying so much winter heaviness and work burnout. By Week 3, my chronic neck pain was gone, and I had my creative fire back. Bloom Room is a sanctuary like no other."</p>
+            <div class="testi-author">
+              <strong>Clara Moreau</strong>
+              <span>Architect & Marin Resident</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"The 24-mat limit makes all the difference. The teachers actually know your name, notice your alignment, and adapt poses for your anatomy. The Saturday sound baths felt like 10 hours of sleep in 90 minutes."</p>
+            <div class="testi-author">
+              <strong>Marcus Chen</strong>
+              <span>Software Engineer & Runner</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"As someone who struggles with consistency, having the cohort accountability and the on-demand portal was life-changing. Even when I traveled for business, I stayed connected to the practice."</p>
+            <div class="testi-author">
+              <strong>Sarah Jenkins, MD</strong>
+              <span>Pediatrician</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investment & Pricing Tiers -->
+    <section class="investment-section" id="investment">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="sub-label">Program Tuition</span>
+          <h2 class="section-title">Choose Your Renewal Immersion</h2>
+          <p class="section-desc">All tiers include access to private member community, weekly home ritual guides, and our 14-day schedule guarantee.</p>
+
+          <!-- Pricing Toggle -->
+          <div class="pricing-toggle-wrap">
+            <span class="toggle-label" id="labelUpfront">Pay In Full (Save $50)</span>
+            <button type="button" class="pricing-toggle-btn" id="pricingToggle" aria-label="Toggle payment schedule" role="switch" aria-checked="false">
+              <span class="toggle-thumb"></span>
+            </button>
+            <span class="toggle-label" id="labelInstallments">2 Bi-Weekly Payments</span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1: Sanctuary Essential -->
+          <div class="pricing-card" data-tier="essential">
+            <div class="pricing-header">
+              <span class="tier-pill">In-Studio Essential</span>
+              <h3 class="tier-name">Sanctuary Rhythm</h3>
+              <p class="tier-desc">Ideal for students with busy schedules wanting 2 foundational in-studio practices a week.</p>
+              <div class="price-box">
+                <span class="price-currency">$</span>
+                <span class="price-amount" data-full="339" data-split="179">339</span>
+                <span class="price-period" data-full="total early bird" data-split="/ 2 bi-weekly pmts">total early bird</span>
+              </div>
+              <span class="price-regular">Regular tuition: $389 (Save $50)</span>
+            </div>
+
+            <ul class="tier-features">
+              <li><span>✓</span> 12 In-Studio sessions (2x weekly)</li>
+              <li><span>✓</span> Full On-Demand Library with 60-day access</li>
+              <li><span>✓</span> Digital Spring Renewal Workbook & Prompts</li>
+              <li><span>✓</span> Post-practice botanical tea lounge access</li>
+              <li><span>✓</span> Prop sanctuary access (mats, blocks, bolsters)</li>
+            </ul>
+
+            <button type="button" class="btn btn-outline btn-block btn-select-tier" data-tier="Sanctuary Rhythm" data-price="339">Select Sanctuary Rhythm</button>
+          </div>
+
+          <!-- Tier 2: The Full Immersion (Featured) -->
+          <div class="pricing-card pricing-featured" data-tier="immersion">
+            <div class="popular-ribbon">Most Transformative</div>
+            <div class="pricing-header">
+              <span class="tier-pill featured-pill">Complete Immersion</span>
+              <h3 class="tier-name">The Full Bloom</h3>
+              <p class="tier-desc">Our flagship holistic cohort experience for complete physical, nervous system, and sensory renewal.</p>
+              <div class="price-box">
+                <span class="price-currency">$</span>
+                <span class="price-amount" data-full="439" data-split="229">439</span>
+                <span class="price-period" data-full="total early bird" data-split="/ 2 bi-weekly pmts">total early bird</span>
+              </div>
+              <span class="price-regular">Regular tuition: $489 (Save $50)</span>
+            </div>
+
+            <ul class="tier-features">
+              <li><span>✓</span> <strong>18 In-Studio sessions</strong> (3x weekly flexibility)</li>
+              <li><span>✓</span> <strong>Bloom Room Physical Welcome Box</strong> ($120 value: cork fascia sphere, organic linen eye pillow & artisan tea tin)</li>
+              <li><span>✓</span> <strong>2 Saturday Twilight Sound Healing Baths</strong> included</li>
+              <li><span>✓</span> <strong>1:1 30-Minute Alignment Consult</strong> with Elena Rostova</li>
+              <li><span>✓</span> Priority front-row mat reservation & mat storage</li>
+              <li><span>✓</span> Lifetime access to the Spring Practice Audio Series</li>
+            </ul>
+
+            <button type="button" class="btn btn-primary btn-block btn-select-tier" data-tier="The Full Bloom" data-price="439">Select The Full Bloom</button>
+          </div>
+
+          <!-- Tier 3: Digital Sanctuary -->
+          <div class="pricing-card" data-tier="digital">
+            <div class="pricing-header">
+              <span class="tier-pill">Anywhere in the World</span>
+              <h3 class="tier-name">Digital Sanctuary</h3>
+              <p class="tier-desc">Designed for remote yogis or frequent travelers seeking structured seasonal renewal from home.</p>
+              <div class="price-box">
+                <span class="price-currency">$</span>
+                <span class="price-amount" data-full="189" data-split="99">189</span>
+                <span class="price-period" data-full="total early bird" data-split="/ 2 bi-weekly pmts">total early bird</span>
+              </div>
+              <span class="price-regular">Regular tuition: $229 (Save $40)</span>
+            </div>
+
+            <ul class="tier-features">
+              <li><span>✓</span> 18 Multi-camera 4K HD Livestreams</li>
+              <li><span>✓</span> On-demand replays available within 2 hours</li>
+              <li><span>✓</span> High-fidelity binaural audio sound baths</li>
+              <li><span>✓</span> Printable 6-Week Renewal Journal & Recipe Guide</li>
+              <li><span>✓</span> Private community Slack & weekly faculty Q&A</li>
+            </ul>
+
+            <button type="button" class="btn btn-outline btn-block btn-select-tier" data-tier="Digital Sanctuary" data-price="189">Select Digital Sanctuary</button>
+          </div>
+        </div>
+
+        <div class="guarantee-box">
+          <div class="guarantee-icon">🌿</div>
+          <div class="guarantee-content">
+            <h4>Our 14-Day Renewal Confidence Promise</h4>
+            <p>Attend the first two weeks of classes. If you feel this program isn't meeting you where you are, notify our studio team by April 19 for a gracious, no-questions-asked refund minus standard drop-in fees.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center">
+          <span class="sub-label">Clarity & Details</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Everything you need to know about preparing for the 6-week renewal journey.</p>
+        </div>
+
+        <div class="faq-accordion" id="faqAccordion">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if I am a beginner or haven't practiced yoga in months?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>You are in the perfect place. Spring renewal is about meeting your body exactly where it is today—not performing acrobatics. Every pose offers progressive variations, intelligent prop utilization (blocks, bolsters, wall support), and gentle somatic alternatives. Our faculty is trained to adapt postures safely for all stages.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if I travel or miss an in-studio class during the 6 weeks?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>You will never lose a session! Every single in-studio class is simultaneously recorded in 4K with studio-grade sound and uploaded to your secure Bloom Room portal within 90 minutes. You can practice from your hotel room, living room, or catch up at your own rhythm with 60-day archive access.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What props or equipment do I need to bring?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Bloom Room provides everything you need in our studio: sanitized non-toxic cork mats, organic buckwheat bolsters, cork blocks, cotton blankets, sandbags, and eye pillows. You are welcome to bring your personal mat if you prefer. For home livestreamers, we provide a suggested home prop guide with everyday household substitutes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I participate if I am recovering from an injury or pregnant?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. During your registration, you can list specific injuries, spinal sensitivities, or prenatal trimesters. Our lead somatics teacher Elena Rostova will review your intake notes and provide tailored modification guidance during your orientation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I use my employer wellness stipend or HSA/FSA funds?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Many of our students successfully submit their Bloom Room tuition for corporate wellness stipends or HSA/FSA health reimbursement accounts (under stress reduction, therapeutic movement, or mobility rehabilitation with a medical Letter of Medical Necessity). We provide detailed itemized receipts upon request.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where is Bloom Room Sanctuary located and how is parking?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Our sanctuary is nestled at 428 Blossom Way in Mill Valley / Marin County, California, just 12 minutes north of the Golden Gate Bridge. We offer a dedicated private parking lot with free 2-hour parking, EV charging stations, and indoor bike racks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="final-cta-section">
+      <div class="container text-center">
+        <span class="sub-label cta-pill">Only 6 Mats Remaining</span>
+        <h2 class="final-cta-title">Your Spring Awakening Begins on the Mat.</h2>
+        <p class="final-cta-lead">Step into warmth, spaciousness, and renewal. Reserve your place in the 2026 cohort before early-bird pricing ends.</p>
+        <div class="final-cta-btns">
+          <button type="button" class="btn btn-primary btn-lg" id="btnFinalReserve">Reserve Your Mat Today</button>
+          <a href="#curriculum" class="btn btn-ghost btn-lg">Review Curriculum</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="brand-text">
+          <span class="brand-title">BLOOM ROOM</span>
+          <span class="brand-subtitle">YOGA & SANCTUARY</span>
+        </div>
+        <p class="footer-tagline">A light-filled sanctuary dedicated to conscious movement, restorative nervous system recalibration, and botanical wellness rituals.</p>
+        <p class="footer-address">428 Blossom Way • Mill Valley, CA 94941<br>hello@bloomroomyoga.com • (415) 890-BLOOM</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sanctuary</h4>
+        <ul class="footer-links">
+          <li><a href="#curriculum">6-Week Curriculum</a></li>
+          <li><a href="#sanctuary">Sanctuary Amenities</a></li>
+          <li><a href="#schedule">Class Schedule</a></li>
+          <li><a href="#teachers">Guiding Faculty</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul class="footer-links">
+          <li><a href="#investment">Tuition & Pricing</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+          <li><a href="#quiz">Spring Renewal Quiz</a></li>
+          <li><a href="#">Corporate Wellness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4>Sanctuary Journal</h4>
+        <p>Subscribe for seasonal equinox tea recipes, somatic meditations, and priority cohort announcements.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email address" required class="input-field" id="newsEmail">
+          <button type="submit" class="btn btn-primary btn-sm">Join</button>
+        </form>
+        <span class="newsletter-notice" id="newsNotice" style="display:none; color: #4A6054;">Thank you for joining our circle 🌿</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© 2026 Bloom Room Yoga Sanctuary LLC. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <span>•</span>
+        <a href="#">Terms of Service</a>
+        <span>•</span>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Reservation Modal -->
+  <div class="modal-backdrop" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close booking modal">✕</button>
+
+      <!-- Modal Step 1: Tier & Schedule Selection -->
+      <div class="modal-step active" id="modalStep1">
+        <div class="modal-header">
+          <span class="modal-pre">Spring Renewal 2026</span>
+          <h3 class="modal-title">Step 1: Confirm Your Mat & Tier</h3>
+          <p class="modal-desc">Select your preferred immersion level and class schedule cadence.</p>
+        </div>
+
+        <form id="reservationForm">
+          <div class="form-group">
+            <label class="form-label" for="selectedTier">Chosen Immersion Tier</label>
+            <select id="selectedTier" class="form-select" required>
+              <option value="The Full Bloom ($439)" selected>The Full Bloom — Most Popular ($439)</option>
+              <option value="Sanctuary Rhythm ($339)">Sanctuary Rhythm ($339)</option>
+              <option value="Digital Sanctuary ($189)">Digital Sanctuary ($189)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="selectedTime">Preferred Schedule Rhythm</label>
+            <select id="selectedTime" class="form-select" required>
+              <option value="Morning Solar (Mon/Wed 7:00 AM)">Morning Solar (Mon/Wed 7:00 AM)</option>
+              <option value="Twilight Yin & Sound (Mon/Thu 6:30 PM)">Twilight Yin & Sound (Mon/Thu 6:30 PM)</option>
+              <option value="Midday Mobility (Tue/Thu 12:00 PM)">Midday Mobility (Tue/Thu 12:00 PM)</option>
+              <option value="Flexible Hybrid (In-Studio + 4K Replays)">Flexible Hybrid (In-Studio + 4K Replays)</option>
+            </select>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="custFirstName">First Name</label>
+              <input type="text" id="custFirstName" class="form-input" placeholder="e.g. Elena" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="custLastName">Last Name</label>
+              <input type="text" id="custLastName" class="form-input" placeholder="e.g. Vance" required>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="custEmail">Email Address</label>
+              <input type="email" id="custEmail" class="form-input" placeholder="elena@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="custPhone">Phone Number</label>
+              <input type="tel" id="custPhone" class="form-input" placeholder="(415) 555-0199" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="custNotes">Health Notes, Injuries, or Dietary / Tea Preferences (Optional)</label>
+            <textarea id="custNotes" class="form-textarea" rows="2" placeholder="Tell us about any lower back/wrist sensitivities, or herbal preferences..."></textarea>
+          </div>
+
+          <div class="modal-actions">
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Proceed to Confirmation</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Modal Step 2: Instant Confirmation Screen -->
+      <div class="modal-step" id="modalStep2" style="display: none;">
+        <div class="confirm-card text-center">
+          <div class="confirm-icon">🌸</div>
+          <span class="sub-label">Mat Successfully Reserved!</span>
+          <h3 class="modal-title" style="margin-top: 8px;">Welcome to Bloom Room</h3>
+          <p class="modal-desc" id="confirmMessage">
+            We have saved your mat for the <strong>6-Week Spring Renewal Program</strong> starting Monday, April 6, 2026.
+          </p>
+
+          <div class="reservation-summary-box">
+            <div class="summary-row">
+              <span>Participant:</span>
+              <strong id="sumName">Elena Vance</strong>
+            </div>
+            <div class="summary-row">
+              <span>Program Tier:</span>
+              <strong id="sumTier">The Full Bloom ($439)</strong>
+            </div>
+            <div class="summary-row">
+              <span>Cohort Cadence:</span>
+              <strong id="sumCadence">Morning Solar Flow</strong>
+            </div>
+            <div class="summary-row">
+              <span>Sanctuary Location:</span>
+              <strong>428 Blossom Way, Mill Valley</strong>
+            </div>
+          </div>
+
+          <p class="confirm-email-note">
+            A confirmation receipt and your digital welcome onboarding packet have been sent to <strong id="sumEmail">elena@example.com</strong>.
+          </p>
+
+          <div class="confirm-actions">
+            <button type="button" class="btn btn-primary" id="btnDownloadCal">📅 Add to Calendar (.ics)</button>
+            <button type="button" class="btn btn-ghost" id="btnCloseConfirm">Close Window</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
